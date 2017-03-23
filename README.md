@@ -1,2 +1,2 @@
-# server-config
-test config microservices
+# sample-config
+Spring Cloud External Configuration Repository
