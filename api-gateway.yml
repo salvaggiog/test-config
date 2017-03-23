@@ -75,7 +75,7 @@ spring:
 ---
 # Auth-server instance when used on Docker
 spring:
-  profiles: docker
+  profiles: local
 eureka:
 # Register our microservices to Eureka using hostnames in a Docker environment will not work, they will all get 
 # one and the same hostname. Instead we configure them to use its IP address during registration with Eureka.
@@ -88,7 +88,7 @@ eureka:
       
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
-    hostname: 127.0.0.1
+    hostname: localhost
     port: 8899
     contextPath: userauth
 #authserver:
