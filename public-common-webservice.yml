@@ -8,9 +8,9 @@ eureka:
 mongo: 
   database: dominus
   host: localhost
-  password: ~
+  password:
   port: 27017
-  username: ~
+  username:
 server: 
   port: 8080
 spring: 
