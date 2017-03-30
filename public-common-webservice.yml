@@ -8,6 +8,6 @@ eureka:
 mongo:
   host: localhost
   port: 27017
-  database: yourdb
+  database: dominus
   username: 
   password: 
