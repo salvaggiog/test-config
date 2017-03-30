@@ -9,5 +9,5 @@ mongo:
   host: localhost
   port: 27017
   database: dominus
-  username: 
-  password: 
+  username: userdb
+  password: 123456
