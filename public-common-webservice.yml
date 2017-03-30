@@ -18,6 +18,3 @@ mongo:
   password:
   port: 27017
   username:
-
-server:
-  port: 8080
