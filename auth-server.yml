@@ -21,11 +21,11 @@ spring:
     username: root
     password: pgi1979
     driver-class: com.mysql.jdbc.Driver
-    provider_class:org.hibernate.connection.C3P0ConnectionProvider
-  
+     
   
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
+    provider-class:org.hibernate.connection.C3P0ConnectionProvider
     show-sql: true
     hibernate:
       ddl-auto: update
