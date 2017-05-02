@@ -28,8 +28,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-      autoReconnect:true
-      autoReconnectForPools:true
       
 
 ---
