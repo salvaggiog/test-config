@@ -29,12 +29,11 @@ spring:
     hibernate:
       ddl-auto: update
       connection:
-      provider_class:org.hibernate.connection.C3P0ConnectionProvider
-      useUnicode:true
-      characterEncoding:utf8_bin
-      charSet:UTF-8
-      autoReconnect:true
-      autoReconnectForPools:true
+        useUnicode:true
+        characterEncoding:utf8_bin
+        charSet:UTF-8
+        autoReconnect:true
+        autoReconnectForPools:true
       
 
 ---
