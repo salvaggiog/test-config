@@ -28,7 +28,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-      connection:
         useUnicode:true
         characterEncoding:utf8_bin
         charSet:UTF-8
