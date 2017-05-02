@@ -28,11 +28,8 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-        useUnicode:true
-        characterEncoding:utf8_bin
-        charSet:UTF-8
-        autoReconnect:true
-        autoReconnectForPools:true
+      autoReconnect:true
+      autoReconnectForPools:true
       
 
 ---
