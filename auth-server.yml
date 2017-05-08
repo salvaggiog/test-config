@@ -1,8 +1,8 @@
 # We need to setup different context root for the auth server so that we can store separate
 # cookies for both the API gateway as well as the OAuth2 authorization server.
 server:
-  port: 8899
-  contextPath: /userauth 
+   port: 8899
+    contextPath: /userauth 
 
 eureka:
   client:
@@ -20,7 +20,7 @@ spring:
     url: jdbc:mysql://localhost:3306/core_indiana_oauth2
     username: root
     password: pgi1979
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class: com.mysql.jdbc.Driver
      
   
   jpa:
