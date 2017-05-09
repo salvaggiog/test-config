@@ -1,6 +1,5 @@
 server:
-  port: 8086
-
+   port: 8086
 
 eureka:
 # Register our microservices to Eureka using hostnames in a Docker environment will not work, they will all get 
@@ -11,18 +10,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-# The OAuth2 server definition that would be used to send the authorization requests to
-authserver:
-    hostname: localhost
-    port: 8899
-    contextPath: userauth
-
-# Note that the "/user" endpoint needs to provide the principle of the logged in user (/me endpoint)
-spring:
-  oauth2:
-    resource: 
-      userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
-      preferTokenInfo: false 
 
 mongo: 
   database: dominus
@@ -46,3 +33,15 @@ spring:
     hibernate:
       ddl-auto: update
  
+# The OAuth2 server definition that would be used to send the authorization requests to
+authserver:
+    hostname: localhost
+    port: 8899
+    contextPath: userauth
+
+# Note that the "/user" endpoint needs to provide the principle of the logged in user (/me endpoint)
+spring:
+  oauth2:
+    resource: 
+      userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
+      preferTokenInfo: false 
