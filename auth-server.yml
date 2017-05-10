@@ -30,7 +30,7 @@ spring:
 
 mongo: 
   database: dominus
-  host: localhost
+  host: 10.3.1.180
   password:
   port: 27017
   username:
