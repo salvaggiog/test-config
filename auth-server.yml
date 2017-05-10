@@ -37,10 +37,11 @@ mongo:
 
 
 ---
+
 system_url:
   urlGameF1X2: http://vgames2875.com/f1x2games/loadGame.jsp
   urlGameMobileF1X2:http://vgames2875.com/f1x2games/loadMobileGame.jsp
-
+  
 
 spring:
   profiles: docker
