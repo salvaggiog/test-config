@@ -28,6 +28,13 @@ spring:
     hibernate:
       ddl-auto: update
 
+mongo: 
+  database: dominus
+  host: localhost
+  password:
+  port: 27017
+  username:
+
 ---
 
 spring:
