@@ -43,6 +43,8 @@ system_url:
   
   urlGameMobileF1X2: http://vgames2875.com/f1x2games/loadMobileGame.jsp
   
+  urlSevenSlotGame: http://games.sevenslot.net/
+    
 
 spring:
   profiles: docker
