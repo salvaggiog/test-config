@@ -10,7 +10,6 @@ eureka:
     serviceUrl:
       defaultZone: http://10.3.1.187:8761/eureka/
 
-
 mongo: 
   database: dominus
   host: 10.3.1.180
@@ -33,4 +32,3 @@ spring:
     hibernate:
       ddl-auto: update
  
-
