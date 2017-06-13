@@ -19,7 +19,6 @@ spring:
      password: test13!Wkv
      driver-class: com.mysql.jdbc.Driver
    
-   
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
@@ -33,7 +32,6 @@ mongo:
   password:
   port: 27017
   username:
-
 
 ---
    
