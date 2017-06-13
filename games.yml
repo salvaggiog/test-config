@@ -8,12 +8,12 @@ eureka:
     preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.3.1.187:8761/eureka/
 
 
 mongo: 
   database: dominus
-  host: localhost
+  host: 10.3.1.180
   password:
   port: 27017
   username:
