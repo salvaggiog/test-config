@@ -23,6 +23,7 @@ zuul:
     common: 
       path: /common/**
       serviceId: common
+      stripPrefix: false
     games:
       path: /games/**
       url: http://localhost:8086/games
