@@ -19,20 +19,24 @@ zuul:
   routes:
     bonus-server: 
       path: /bonus/**
-      url: http://localhost:8087/bonus
+      serviceId: bonus
+      stripPrefix: false
     common: 
       path: /common/**
       serviceId: common
       stripPrefix: false
     games:
       path: /games/**
-      url: http://localhost:8086/games
+      serviceId: games
+      stripPrefix: false
     gofiliate:
       path: /gofiliate/**
-      url: http://localhost:8891/gofiliate
+      serviceId: gofiliate
+      stripPrefix: false
     seamless-gameart:
       path: /seamless-gameart/**
-      url: http://localhost:8084/seamless-gameart
+      serviceId: seamless-gameart
+      stripPrefix: false
     user: 
       path: /userauth/**
       stripPrefix: true
