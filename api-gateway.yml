@@ -37,10 +37,10 @@ zuul:
       path: /seamless-gameart/**
       serviceId: seamless-gameart
       stripPrefix: false
-    user: 
+    auth-server: 
       path: /userauth/**
       stripPrefix: true
-      url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
+      serviceId: auth-server
 # Define the Eureka server that handles service registration
 eureka:
   client:
@@ -60,7 +60,7 @@ spring:
     sso:
       home:
         secure: false
-        path: /common/**,/seamless-gameart/**,/gofiliate/**
+        path: /common/**,/seamless-gameart/**,/gofiliate/**, /userauth/RegisterUser
     client:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
