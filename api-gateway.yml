@@ -25,7 +25,7 @@ zuul:
     gofiliate: /gofiliate/**
     seamless-gameart: /seamless-gameart/**
     user: 
-      path: /api/loggedinuser/**
+      path: /userauth/**
       stripPrefix: true
       url: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}
 # Define the Eureka server that handles service registration
