@@ -43,6 +43,8 @@ zuul:
       serviceId: auth-server
 # Define the Eureka server that handles service registration
 eureka:
+  instance:
+      preferIpAddress: true
   client:
     serviceUrl:
       defaultZone: http://10.3.1.187:8761/eureka/
