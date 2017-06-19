@@ -22,7 +22,7 @@ zuul:
       url: http://localhost:8087/bonus
     common: 
       path: /common/**
-      url: http://localhost:8085/common
+      serviceId: common
     games:
       path: /games/**
       url: http://localhost:8086/games
