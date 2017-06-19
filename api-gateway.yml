@@ -34,7 +34,7 @@ zuul:
       serviceId: gofiliate
       stripPrefix: false
     seamless-gameart:
-      path: /seamless-gameart/**
+      path: /gameart/**
       serviceId: seamless-gameart
       stripPrefix: false
     auth-server: 
