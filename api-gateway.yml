@@ -17,13 +17,21 @@ authserver:
 # requests using zuul
 zuul:
   routes:
-    bonus-server: /bonus/**
+    bonus-server: 
+      path: /bonus/**
+      url: http://localhost:8087/bonus
     common: 
       path: /common/**
       url: http://localhost:8085/common
-    games: /games/**
-    gofiliate: /gofiliate/**
-    seamless-gameart: /seamless-gameart/**
+    games:
+      path: /games/**
+      url: http://localhost:8086/games
+    gofiliate:
+      path: /gofiliate/**
+      url: http://localhost:8891/gofiliate
+    seamless-gameart:
+      path: /seamless-gameart/**
+      url: http://localhost:8084/seamless-gameart
     user: 
       path: /userauth/**
       stripPrefix: true
@@ -47,7 +55,7 @@ spring:
     sso:
       home:
         secure: false
-        path: /common/**
+        path: /common/**,/seamless-gameart/**,/gofiliate/**
     client:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
