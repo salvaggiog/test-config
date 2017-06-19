@@ -18,7 +18,9 @@ authserver:
 zuul:
   routes:
     bonus-server: /bonus/**
-    common: /common/**
+    common: 
+      path: /common/**
+      url: http://localhost:8085
     games: /games/**
     gofiliate: /gofiliate/**
     seamless-gameart: /seamless-gameart/**
