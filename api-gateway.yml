@@ -20,7 +20,7 @@ zuul:
     bonus-server: /bonus/**
     common: 
       path: /common/**
-      url: http://localhost:8085
+      url: http://localhost:8085/common
     games: /games/**
     gofiliate: /gofiliate/**
     seamless-gameart: /seamless-gameart/**
@@ -47,7 +47,7 @@ spring:
     sso:
       home:
         secure: false
-        path: /,/**/*.html,/common/**
+        path: /common/**
     client:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
