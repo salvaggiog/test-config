@@ -1,14 +1,13 @@
 server:
    port: 8086
    contextPath: /games
-   
+
 eureka:
-   instance:
-      preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone:  http://10.3.1.187:8761/eureka/
-      
+      defaultZone: http://10.3.1.187:8761/eureka/
+
+
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
     hostname: localhost
@@ -25,13 +24,7 @@ spring:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: clientapp
-
-mongo: 
-  database: dominus
-  host: 10.3.1.180
-  password:
-  port: 27017
-  username:
+---
 
 # Datasource and JPA configuration to be used for storing the OAuth authorization details 
 # and token store
@@ -47,3 +40,4 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+ 
