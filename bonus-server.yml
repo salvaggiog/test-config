@@ -24,7 +24,8 @@ spring:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: clientapp
-
+      
+      
 mongo: 
   database: dominus
   host: 10.3.1.180
@@ -40,7 +41,7 @@ spring:
     username: testuser
     password: test13!Wkv
     driver-class: com.mysql.jdbc.Driver
-  
+    
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
