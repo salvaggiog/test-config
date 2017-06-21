@@ -1,16 +1,14 @@
-server:
+erver:
    port: 8087
-   
+
 eureka:
-   instance:
-      preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://10.3.1.187:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
-    hostname: 10.3.1.187
+    hostname: localhost
     port: 8899
     contextPath: userauth
 
@@ -25,10 +23,11 @@ spring:
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: clientapp
       
-      
+---
+
 mongo: 
   database: dominus
-  host: 10.3.1.180
+  host: localhost
   password:
   port: 27017
   username:
@@ -37,14 +36,13 @@ mongo:
 # and token store
 spring:
   datasource:
-    url: jdbc:mysql://10.3.2.212:3306/core_indiana_oauth2
-    username: testuser
-    password: test13!Wkv
+    url: jdbc:mysql://localhost:3306/core_indiana_oauth2
+    username: root
+    password: pgi1979
     driver-class: com.mysql.jdbc.Driver
-    
+  
   jpa:
     database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
     hibernate:
       ddl-auto: update
-      
