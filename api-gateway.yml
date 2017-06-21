@@ -39,7 +39,7 @@ zuul:
       stripPrefix: false
     auth-server: 
       path: /userauth/**
-      stripPrefix: true
+      stripPrefix: false
       serviceId: auth-server
 # Define the Eureka server that handles service registration
 eureka:
