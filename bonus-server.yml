@@ -1,6 +1,6 @@
 server:
    port: 8087
-
+   
 eureka:
    instance:
       preferIpAddress: true
@@ -24,8 +24,6 @@ spring:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: clientapp
----
-
 
 mongo: 
   database: dominus
@@ -48,3 +46,4 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+      
