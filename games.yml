@@ -49,7 +49,7 @@ spring:
       characterEncoding: utf8_bin
       charSet: UTF-8
       autoReconnect: true
-      autoReconnectForPools: true      
+      autoReconnectForPools: true
       c3p0:
          acquire_increment: 3
          max_size: 200
