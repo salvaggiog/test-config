@@ -35,10 +35,10 @@ spring:
     url: jdbc:mysql://10.3.2.212:3306/core_indiana_oauth2
     username: testuser
     password: test13!Wkv
-   driver-class: com.mysql.jdbc.Driver
+    driver-class: com.mysql.jdbc.Driver
     testOnBorrow: true
     validationQuery: SELECT 1
-  
+    
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
@@ -60,3 +60,4 @@ spring:
          maxConnectionAge: 120
          idle_test_period: 10
          maxStatements: 0
+         
