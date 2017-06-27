@@ -25,14 +25,6 @@ spring:
       userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
       clientId: clientapp
       
----
-
-mongo: 
-  database: dominus
-  host: localhost
-  password:
-  port: 27017
-  username:
 
 # Datasource and JPA configuration to be used for storing the OAuth authorization details 
 # and token store
