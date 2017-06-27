@@ -5,8 +5,8 @@ eureka:
   instance:
       preferIpAddress: true
   client:
-    serviceUrl:
-      defaultZone: http://10.3.1.187:8761/eureka/
+      serviceUrl:
+         defaultZone: http://10.3.1.187:8761/eureka/
 
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
@@ -39,3 +39,4 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+      
