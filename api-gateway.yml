@@ -19,7 +19,7 @@ zuul:
   routes:
     bonus-server: 
       path: /bonus/**
-      serviceId: bonus
+      serviceId: bonus-server
       stripPrefix: false
     common: 
       path: /common/**
