@@ -24,8 +24,8 @@ spring:
       userInfoUri: http://${authserver.hostname}/${authserver.contextPath}/me
       preferTokenInfo: false
     client:
-      accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
-      userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
+      accessTokenUri: http://${authserver.hostname}/${authserver.contextPath}/oauth/token
+      userAuthorizationUri: http://${authserver.hostname}/${authserver.contextPath}/oauth/authorize
       clientId: clientapp
 ---
 
