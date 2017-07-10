@@ -17,6 +17,14 @@ authserver:
 # requests using zuul
 zuul:
   routes:
+    messagenet: 
+      path: /messagenet/**
+      serviceId: messagenet
+      stripPrefix: false
+    payment: 
+      path: /payment/**
+      serviceId: payment
+      stripPrefix: false
     bonus-server: 
       path: /bonus/**
       serviceId: bonus-server
