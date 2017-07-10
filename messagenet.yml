@@ -1,0 +1,16 @@
+# We need to setup different context root for the auth server so that we can store separate
+# cookies for both the API gateway as well as the OAuth2 authorization server.
+server:
+  port: 8093
+  contextPath: /messagenet 
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+                
+security:
+  user:
+    password: password      
