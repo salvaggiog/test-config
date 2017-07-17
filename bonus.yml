@@ -43,7 +43,7 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
-    entitymanager-packagesToScan: com.microservice.mysql
+    entitymanager-packagesToScan: com.microservice.*
     hibernate:
       ddl-auto: none
       useUnicode: true
