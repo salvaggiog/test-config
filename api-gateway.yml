@@ -27,7 +27,7 @@ zuul:
       stripPrefix: false
     bonus-server: 
       path: /bonus/**
-      serviceId: bonus-server
+      serviceId: bonus
       stripPrefix: false
     common: 
       path: /common/**
