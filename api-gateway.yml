@@ -16,7 +16,14 @@ authserver:
 # Spring cloud security would need to secure the api gateway before it can route the 
 # requests using zuul
 zuul:
+  host:
+    socket-timeout-millis: 10000
+    connect-timeout-millis: 10000
   routes:
+    wallet: 
+      path: /wallet/**
+      serviceId: wallet
+      stripPrefix: false
     messagenet: 
       path: /messagenet/**
       serviceId: messagenet
