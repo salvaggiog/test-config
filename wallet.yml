@@ -18,8 +18,8 @@ eureka:
 spring:
   datasource:
     url: jdbc:mysql://10.3.2.212:3306/core_indiana_reticulum
-    username: root
-    password: pgi1979
+    username: testuser
+    password: test13!Wkv
     driver-class: com.mysql.jdbc.Driver
     testOnBorrow: true
     validationQuery: SELECT 1
