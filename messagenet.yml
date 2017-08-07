@@ -9,10 +9,6 @@ eureka:
     serviceUrl:
       defaultZone: http://10.3.1.187:8761/eureka/
 
-security:
-   basic:
-      enabled: false
-
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
     hostname: localhost
