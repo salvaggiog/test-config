@@ -21,9 +21,28 @@ spring:
     username: testuser
     password: test13!Wkv
     driver-class: com.mysql.jdbc.Driver
-      
+    testOnBorrow: true
+    validationQuery: SELECT 1
+  
   jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
+    entitymanager-packagesToScan: com.microservice.mysql
     hibernate:
       ddl-auto: none
+      useUnicode: true
+      characterEncoding: utf8_bin
+      charSet: UTF-8
+      autoReconnect: true
+      autoReconnectForPools: true      
+      c3p0:
+         acquire_increment: 3
+         max_size: 200
+         min_size: 3
+         maxIdleTime: 120
+         unreturned_connection_timeout: 150
+         timeout: 180
+         maxConnectionAge: 120
+         idle_test_period: 10
+         maxStatements: 0
+         
