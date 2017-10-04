@@ -20,9 +20,9 @@ zuul:
     socket-timeout-millis: 10000
     connect-timeout-millis: 10000
   routes:
-    wallet: 
-      path: /wallet/**
-      serviceId: wallet
+     games-aggregators:
+      path: /games-aggregators/**
+      serviceId: games-aggregators
       stripPrefix: false
     messagenet: 
       path: /messagenet/**
