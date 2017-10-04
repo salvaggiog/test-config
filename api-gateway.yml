@@ -20,7 +20,7 @@ zuul:
     socket-timeout-millis: 10000
     connect-timeout-millis: 10000
   routes:
-     games-aggregators:
+    games-aggregators:
       path: /games-aggregators/**
       serviceId: games-aggregators
       stripPrefix: false
