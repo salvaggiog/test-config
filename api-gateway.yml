@@ -24,6 +24,10 @@ zuul:
       path: /games-aggregators/**
       serviceId: games-aggregators
       stripPrefix: false
+    wallet: 
+      path: /wallet/**
+      serviceId: wallet
+      stripPrefix: false
     messagenet: 
       path: /messagenet/**
       serviceId: messagenet
