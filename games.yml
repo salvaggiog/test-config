@@ -12,7 +12,7 @@ eureka:
 
 # The OAuth2 server definition that would be used to send the authorization requests to
 authserver:
-    hostname: 10.3.1.187 , 10.3.1.191
+    hostname: 10.3.1.187
     port: 8899
     contextPath: userauth
 
@@ -20,11 +20,11 @@ authserver:
 spring:
   oauth2:
     resource: 
-      userInfoUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/me
+      userInfoUri: http://10.3.1.187:8899/userauth/me,http://10.3.1.191:8899/userauth/me
       preferTokenInfo: false
     client:
-      accessTokenUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/token
-      userAuthorizationUri: http://${authserver.hostname}:${authserver.port}/${authserver.contextPath}/oauth/authorize
+      accessTokenUri:  http://10.3.1.187:8899/userauth/oauth/token,http://10.3.1.191:8899/userauth/token
+      userAuthorizationUri:  http://10.3.1.187:8899/userauth/oauth/authorize,http://10.3.1.191:8899/userauth/authorize
       clientId: clientapp
 ---
 
