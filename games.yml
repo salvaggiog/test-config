@@ -20,9 +20,7 @@ authserver:
 spring:
   oauth2:
     resource: 
-      userInfoUri: 
-         http://10.3.1.187:8899/userauth/me
-         http://10.3.1.191:8899/userauth/me
+      userInfoUri: http://10.3.1.187:8899/userauth/me
       preferTokenInfo: false
     client:
       accessTokenUri:  http://10.3.1.187:8899/userauth/oauth/token,http://10.3.1.191:8899/userauth/token
