@@ -52,7 +52,7 @@ zuul:
       path: /gofiliate/**
       serviceId: gofiliate
       stripPrefix: false
-     reports:
+    reports:
       path: /reports/**
       serviceId: reports
       stripPrefix: false    
