@@ -60,6 +60,10 @@ zuul:
       path: /seamless-f1x2/**
       serviceId: seamless-f1x2
       stripPrefix: false
+    seamless-seven:
+      path: /seamless-seven/**
+      serviceId: seamless-seven
+      stripPrefix: false
     seamless-gameart:
       path: /gameart/**
       serviceId: seamless-gameart
